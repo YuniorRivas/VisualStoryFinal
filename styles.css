@@ -1,0 +1,297 @@
+@font-face {
+font-family: 'Zuume Rough';
+src: url('fonts/zuumerough bold.woff2') format('woff2');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'Zuume Rough';
+src: url('fonts/zuumerough regular.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+}
+body, html {
+margin: 0;
+padding: 0;
+width: 100%;
+height: auto; 
+background-color: #000;
+color: #a5a8d5;
+font-family: 'Zuume Rough', sans-serif;
+font-weight: bold;
+overflow-x: hidden;
+background-image: url('images/background logo.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+overflow-x: hidden;
+}
+#introduction {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+text-align: center;
+z-index: 10;
+overflow: hidden;
+}
+.title-container {
+position: absolute;
+top: 0;
+width: 100%;
+text-align: center;
+color: #FFF;
+z-index: 20;
+}
+.title-container h1 {
+font-size: 120px;
+margin: 0;
+margin-top: 250px;
+}
+.title-container p {
+font-size: 40px;
+margin-top: 0;
+}
+#background-video {
+position: absolute;
+right: 0;
+top: -40vh;
+min-width: 100%;
+min-height: 150vh;
+z-index: -1;
+object-fit: cover;
+}
+.overlay {
+background: rgba(0, 0, 0, 0.5);
+color: white;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.scroll-down {
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+color: #FFFFFF;
+text-decoration: none;
+font-size: 25px;
+}
+.stats {
+display: flex;
+justify-content: center;
+gap: 100px;
+position: absolute;
+bottom: 100px;
+width: 100%;
+flex-wrap: wrap;
+}
+.stats .stat p, .stats .stat .counter {
+font-size: 2.5em;
+margin: 0 10px;
+}
+.stats .stat .counter {
+font-size: 4em;
+margin: 0 10px;
+color: #a5a8d5;
+}
+#about-fentanyl .container {
+max-width: 1000px;
+margin: 0 auto;
+}
+#about-fentanyl .section-title {
+font-size: 60px;
+color: #a5a8d5;
+margin-bottom: 30px;
+text-align: center;
+}
+#about-fentanyl .section-description {
+color: #FFFFFF;
+font-size: 30px;
+line-height: 1.5;
+text-align: justify;
+letter-spacing: 1.5px;
+}
+.graph-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+position: relative;
+width: 1000px;
+height: 800px;
+}
+.chart-title {
+text-align: center;
+color: #a5a8d5;
+font-size: 60px;
+letter-spacing: 1.5px;
+}
+#timeline .container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 40px 0;
+position: relative;
+}
+#timeline .section-title {
+font-size: 60px;
+color: #a5a8d5;
+margin-bottom: 30px;
+text-align: center;
+}
+#timeline .timeline {
+position: sticky;
+top: 10;
+background: #000;
+padding-top: 20px;
+z-index: 10;
+}
+#timeline .timeline::before {
+content: '';
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+width: 2px;
+background-color: #a5a8d5;
+top: 0;
+bottom: 0;
+z-index: 1;
+}
+#timeline .event {
+position: relative;
+width: 100%;
+margin: 10px auto;
+padding: 20px;
+box-sizing: border-box;
+}
+#timeline .event .node {
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: #a5a8d5;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+left: calc(50% - 10px);
+z-index: 2;
+}
+#timeline .event .content {
+padding: 20px;
+background: #222;
+color: #FFF;
+border-radius: 4px;
+position: relative;
+z-index: 1;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+font-size: 25px;
+letter-spacing: 1.5px;
+}
+#timeline .event:nth-child(odd) .content {
+margin-left: 0;
+margin-right: 50%;
+}
+#timeline .event:nth-child(even) .content {
+margin-left: 50%;
+margin-right: 0;
+}
+#ny-fights-back .container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 0 20px;
+}
+#ny-fights-back .section-title {
+font-size: 60px;
+color: #a5a8d5;
+margin-bottom: 30px;
+text-align: center;
+}
+#ny-fights-back .section-description {
+color: #FFFFFF;
+font-size: 30px;
+line-height: 1.5;
+text-align: justify;
+letter-spacing: 1.5px;
+}
+#ny-fights-back .images-grid {
+display: flex;
+justify-content: center;
+gap: 15px;
+flex-wrap: wrap;
+}
+#ny-fights-back .images-grid img {
+width: calc(50% - 20px);
+height: auto;
+margin-bottom: 20px;
+transition: transform 0.3s ease;
+}
+#ny-fights-back .images-grid img:hover {
+transform: scale(1.25);
+}
+.images-grid figcaption {
+text-align: center;
+margin-top: 20px;
+color: #FFFFFF;
+font-size: 24px;
+letter-spacing: 1.5px;
+}
+#stories .container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+#stories .section-title {
+font-size: 60px;
+color: #a5a8d5;
+margin-bottom: 30px;
+text-align: center;
+}
+.video-credit {
+text-align: center;
+margin-top: 20px;
+font-size: 30px;
+color: #FFFFFF;
+}
+#stories .video-container {
+text-align: center;
+}
+#stories video {
+width: 100%;
+max-width: 1000px;
+border-radius: 4px;
+}
+#call-to-action .container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+text-align: center;
+}
+#call-to-action .section-title {
+font-size: 30px;
+color: #a5a8d5;
+margin-bottom: 30px;
+}
+#call-to-action .cta-description {
+font-size: 24px;
+color: #FFFFFF;
+margin-bottom: 40px;
+}
+#call-to-action .cta-button {
+padding: 10px 20px;
+font-size: 20px;
+color: #000;
+background-color: #a5a8d5;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+#call-to-action .cta-button:hover {
+background-color: #9b98d1;
+}
+@media (max-width: 768px) {
+}

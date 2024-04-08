@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fentanyl Crisis NYC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="introduction">
+        <div class="title-container">
+            <h1>FENTANYL IN NEW YORK</h1>
+            <p>Facts and Faces of an Epidemic</p>
+        </div>
+        <video autoplay loop muted id="background-video">
+            <source src="videos/fentanyl.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="stats">
+                <div class="stat">
+                    <div class="counter" data-target="8500">8500</div>
+                    <p>Dead Since 2020</p>
+                </div>
+            </div>
+            <a href="#timeline" class="scroll-down">Scroll Down</a>
+        </div>
+    </section>
+
+    <section id="about-fentanyl" class="dynamic-section">
+        <div class="container">
+            <h2 class="section-title">What is Fentanyl?</h2>
+            <p class="section-description">
+                Fentanyl is a  synthetic opioid that is 50 to 100 times more potent than heroin. 
+                It is a prescription pain medication that is also made and distrbuted illegally. While fentanyl is used medical settings to treat severe pain, it is a controlled substance due to its highly addictive properties. Fentanyl is often mixed with other illicti drugs, unknown to many users, and carries a extreme risk of overdose and death. It is currently the deadliest drug in the United States. 
+            </p>
+        </div>
+    </section>
+
+<div class="graph-container">
+    <h2 class="chart-title">Deadliest Drugs in the United States</h2>
+    <canvas id="FentanylGraph"></canvas>
+</div>
+
+<section id="timeline" class="dynamic-section">
+    <div class="container">
+        <h2 class="section-title">Timeline of the Crisis</h2>
+        <div class="timeline">
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>1959</h2>
+                    <p>Fentanyl is synthesized for the first time by Dr. Paul Janssen. It is introduced as an intravenous anesthetic in the 1960s.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>Early 2000s</h2>
+                    <p>Prescription opioid misuse rises significantly, laying the groundwork for broader opioid and subsequent fentanyl misuse.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2006</h2>
+                    <p>Purdue Pharma is sued for its aggressive promotion of Oxycontin, considered a catalyst in the opioid epidemic.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2013</h2>
+                    <p>Fentanyl enters the drug market. The DEA issues a nationwide alert on fentanyl as deaths related to its misuse begin to spike.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2015</h2>
+                    <p>The CDC reports a significant increase in opioid overdose deaths, with fentanyl identified as a key factor. Fentanyl begins to be mixed with heroin, significantly increasing its potency and danger.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2016</h2>
+                    <p>The DEA issues another alert declaring fentanyl as a global threat. The CDC also releases guidelines for prescribing opioids for chronic pain, partly in response to the rising crisis.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2017</h2>
+                    <p>The opioid crisis is declared a national public health emergency. New York City reports a significant increase in overdose deaths, with fentanyl found in more than half of cases.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2018</h2>
+                    <p>The SUPPORT for Patients and Communities Act is signed into law, aiming to improve access to treatment for substance use disorders, fight illegal drugs' distribution, and encourage recovery.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2019</h2>
+                    <p>New York City launches HealingNYC, increasing investment in overdose prevention and education.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2020</h2>
+                    <p>The COVID-19 pandemic exacerbates the opioid crisis, with isolation and stress leading to increased substance misuse. Overdose deaths soar, setting records across the U.S. and in New York City.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2021</h2>
+                    <p>The CDC reports over 100,000 drug overdose deaths in a 12-month period, the highest ever recorded, with fentanyl being the primary driver.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2022</h2>
+                    <p>Efforts to tackle the crisis continue, including expanding access to naloxone, increasing federal funding for addiction services, and targeting fentanyl trafficking.</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="node"></div>
+                <div class="content">
+                    <h2>2023</h2>
+                    <p>New strategies are implemented to address the evolving nature of the crisis, including efforts to disrupt the supply chain of illicit drugs and improve public health responses.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="ny-fights-back" class="dynamic-section">
+        <div class="container">
+            <h2 class="section-title">New York Fights Back</h2>
+
+            <p class="section-description">
+                Over 3,000 people died from drug overdose in New York City in 2022, a 12 percent increase from 2021.
+
+<p class="section-description">
+Deaths by drug overdose kill more New Yorkers than accidental falls, motor vehicle accidents, and fires combined. Recently released data by the Department of Health and Mental Hygiene indicates that fentanyl was present in at least 81 percent of drug overdose deaths in 2022.
+ </p>
+
+<p class="section-description">
+Health Commissioner Dr. Ashwin Vasan issued an advisory as the 2022 data on Unintentional Drug Poisonings was presented. “This crisis is killing a New Yorker every three hours and is impacting every individual and family in our city and in our nation,” proclaimed Dr. Vasan. “No one is spared, even if you think otherwise.”
+            </p>
+
+        <p class="section-description">
+
+The city and state have launched a comprehensive Fentanyl Awareness Campaign designed to educate New Yorkers about the dangers of fentanyl and offers advice on preventing overdoses, such as the importance of not using drugs alone, the dangers of mixing drugs, and the life saving potential of carrying naloxone, an opioid overdose reversal medication. All those who request naloxone from any pharamacy can receive it for free. Furthermore, naloxone traning senimars are held across the city routinely. 
+
+</p>
+
+        <figure class="images-grid">
+                <img src="images/Fentanyl Ad 1.JPG" alt="Fentanyl Ad 1">
+                <img src="images/Fentanyl Ad 2.JPG" alt="Fentanyl Ad 2">
+                <img src="images/Fentanyl Ad 3.JPG" alt="Fentanyl Ad 3">
+                <img src="images/Fentanyl Ad 4.JPG" alt="Fentanyl Ad 4">
+            <figcaption>Ads from the Fentanyl Awareness Campaign as seen on the New York City Subway</figcaption>
+        </figure>
+        </div>
+    </section>
+
+    <section id="stories" class="dynamic-section">
+        <div class="container">
+            <h2 class="section-title">Voices of a Silent Crisis</h2>
+            <p class="video-credit">A Short Video Feature by Yunior Rivas Garcia</p>
+            <div class="video-container">
+                <video controls>
+                    <source src="videos/fentanylfilm.mp4" type="video/mp4">
+                </video> 
+            </div>
+        </div>
+    </section>
+
+    <section id="call-to-action" class="dynamic-section">
+    <div class="container">
+        <p class="section-title">Know the risk. Never use alone. Carry naloxone.</p>
+        <a href="https://oasas.ny.gov/harm-reduction" class="cta-button">Learn more.</a>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<script src="charts.js"></script>
+
+</body>
+</html>
