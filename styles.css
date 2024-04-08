@@ -14,17 +14,24 @@ body, html {
 margin: 0;
 padding: 0;
 width: 100%;
-height: auto; 
+height: 100%;;
 background-color: #000;
-color: #a5a8d5;
 font-family: 'Zuume Rough', sans-serif;
 font-weight: bold;
 overflow-x: hidden;
-background-image: url('images/background logo.png');
+background-image: url("images/backgroundlogo.png");
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
-overflow-x: hidden;
+}
+p {
+font-size: 32px;
+font-family: 'Roboto', sans-serif;
+}
+figcaption
+{
+font-size: 18px;
+font-family: 'Roboto', sans-serif;
 }
 #introduction {
 height: 100vh;
@@ -106,14 +113,14 @@ margin: 0 auto;
 #about-fentanyl .section-title {
 font-size: 60px;
 color: #a5a8d5;
-margin-bottom: 30px;
+margin-top: 100px;
+margin-bottom: 10px;
 text-align: center;
 }
 #about-fentanyl .section-description {
 color: #FFFFFF;
-font-size: 30px;
+font-size: 32px;
 line-height: 1.5;
-text-align: justify;
 letter-spacing: 1.5px;
 }
 .graph-container {
@@ -122,6 +129,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 margin: auto;
+margin-top: 10px;
 position: relative;
 width: 1000px;
 height: 800px;
@@ -214,7 +222,6 @@ text-align: center;
 color: #FFFFFF;
 font-size: 30px;
 line-height: 1.5;
-text-align: justify;
 letter-spacing: 1.5px;
 }
 #ny-fights-back .images-grid {
@@ -271,7 +278,7 @@ padding: 20px;
 text-align: center;
 }
 #call-to-action .section-title {
-font-size: 30px;
+font-size: 50px;
 color: #a5a8d5;
 margin-bottom: 30px;
 }
@@ -282,16 +289,38 @@ margin-bottom: 40px;
 }
 #call-to-action .cta-button {
 padding: 10px 20px;
-font-size: 20px;
+font-size: 30px;
 color: #000;
 background-color: #a5a8d5;
 border: none;
-border-radius: 4px;
 cursor: pointer;
+text-decoration: none;
 transition: background-color 0.3s ease;
 }
 #call-to-action .cta-button:hover {
 background-color: #9b98d1;
 }
+footer {
+font-family: 'Roboto', sans-serif;
+text-align: right;
+padding: 32px;
+color: #fff;
+}
 @media (max-width: 768px) {
+    body, html {
+        background-size: contain;
+    }
+    .graph-container, #timeline .container, #ny-fights-back .container, #stories .container, #call-to-action .container {
+        max-width: 100%;
+    }
+    #ny-fights-back .images-grid img, #stories video {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .timeline .event .content {
+        font-size: 18px;
+        padding: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
